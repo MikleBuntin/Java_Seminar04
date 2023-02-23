@@ -47,10 +47,14 @@ public class Main {
             if (str.equals("Q")) //Выход из цикла
                 break;
 
-            if (str.equals("print")) {
-                System.out.println(stack.pop());
-//                names.remove(index);
+            if (str.equals("revert")) {
+                for (int i = stack.size() - 1; i >= 0 ; i--) {
+                    System.out.println(stack.get(i));
+                }
+
             }
+            else if (str.equals("print")) stack.pop();
+
             else stack.push(str);
             }
     }
