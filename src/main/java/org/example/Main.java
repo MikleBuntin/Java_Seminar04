@@ -57,5 +57,6 @@ public class Main {
 
             else stack.push(str);
             }
+        iScanner.close();
     }
 }
